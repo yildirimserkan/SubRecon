@@ -40,8 +40,8 @@ display_spinner() {
 # 🎮 Telegram bildirim fonksiyonu
 telegram_notify() {
   local MESSAGE="$1"
-  local TOKEN="7965245352:AAEWlhIxR2qkmnLqH_ujpk5LPfYGkUUM6Sc"
-  local CHAT_ID="598638564"
+  local TOKEN=""
+  local CHAT_ID=""
   curl -s -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
     -d chat_id="${CHAT_ID}" \
     -d text="${MESSAGE}" > /dev/null
